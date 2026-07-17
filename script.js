@@ -63,4 +63,18 @@ faders.forEach(fader => appearOnScroll.observe(fader));
 
 // Scroll-to-top button
 const scrollTopBtn = document.createElement("button");
-scrollTopBtn.id = "scrollTopBtn
+scrollTopBtn.id = "scrollTopBtn";
+scrollTopBtn.textContent = "↑";
+document.body.appendChild(scrollTopBtn);
+
+window.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 200) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
