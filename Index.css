@@ -78,14 +78,6 @@ button:hover {
   color: #fff;
 }
 
-/* Project Image */
-.project-img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
 /* Project Button */
 .project-btn {
   display: inline-block;
@@ -172,4 +164,4 @@ footer {
   nav ul li { margin: 10px 0; }
   h1 { font-size: 28px; }
   section { padding: 30px 10px; }
-}
+  }
