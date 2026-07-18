@@ -10,7 +10,7 @@ body {
   color: #fff;
 }
 
-/* Overlay (JS controls it ONLY) */
+/* Overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -20,6 +20,11 @@ body {
   background: rgba(0,0,0,0.5);
   display: none;
   z-index: 9998;
+  pointer-events: none;
+}
+
+#menu-toggle:checked ~ .overlay {
+  pointer-events: auto;
 }
 
 /* Navigation */
@@ -88,7 +93,11 @@ nav ul.nav-links li a {
   z-index: 9999;
 }
 
-/* CLOSE BUTTON */
+#menu-toggle:checked ~ .sidebar {
+  right: 0;
+}
+
+/* Close button */
 .close-btn {
   position: absolute;
   top: 20px;
@@ -102,11 +111,6 @@ nav ul.nav-links li a {
   text-decoration: none;
   font-size: 18px;
   border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-/* Sidebar open */
-#menu-toggle:checked ~ .sidebar {
-  right: 0;
 }
 
 /* Sections */
@@ -196,4 +200,4 @@ footer {
   .hamburger {
     display: flex;
   }
-                              }
+    }
