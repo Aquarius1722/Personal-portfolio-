@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Hamburger Checkbox -->
+  <input type="checkbox" id="menu-toggle">
 
   <!-- Navigation -->
   <header>
@@ -24,15 +30,15 @@
       </ul>
 
       <!-- Hamburger Icon -->
-      <div class="hamburger">
+      <label for="menu-toggle" class="hamburger">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </label>
     </nav>
   </header>
 
-  <!-- Sidebar Menu -->
+  <!-- Sidebar -->
   <div class="sidebar">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -101,4 +107,4 @@
 
   <script src="script.js"></script>
 </body>
-  </html>
+</html>
