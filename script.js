@@ -9,17 +9,33 @@ document.querySelectorAll("nav ul li a").forEach(link => {
 });
 
 // View Projects button scroll
-const viewProjectsBtn = document.getElementById("viewProjects");
-viewProjectsBtn.addEventListener("click", () => {
+document.getElementById("viewProjects").addEventListener("click", () => {
   document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
 });
 
-// Contact form submission
+// Contact form submission (Savage Mode)
 const contactForm = document.querySelector("form");
 contactForm.addEventListener("submit", function(e) {
   e.preventDefault();
-  alert("Thank you for your message! I will get back to you soon.");
+
+  alert("😹 You think your message went somewhere? It went to heaven 😛🙈");
+
   contactForm.reset();
+});
+
+// Sidebar toggle
+const hamburger = document.querySelector(".hamburger");
+const sidebar = document.querySelector(".sidebar");
+
+hamburger.addEventListener("click", () => {
+  sidebar.style.right = sidebar.style.right === "0px" ? "-250px" : "0px";
+});
+
+// Close sidebar when clicking a link
+document.querySelectorAll(".sidebar a").forEach(link => {
+  link.addEventListener("click", () => {
+    sidebar.style.right = "-250px";
+  });
 });
 
 // Dark mode toggle
@@ -68,11 +84,8 @@ scrollTopBtn.textContent = "↑";
 document.body.appendChild(scrollTopBtn);
 
 window.addEventListener("scroll", () => {
-  if (document.documentElement.scrollTop > 200) {
-    scrollTopBtn.style.display = "block";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
+  scrollTopBtn.style.display =
+    document.documentElement.scrollTop > 200 ? "block" : "none";
 });
 
 scrollTopBtn.addEventListener("click", () => {
