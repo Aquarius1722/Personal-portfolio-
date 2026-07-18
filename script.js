@@ -37,22 +37,24 @@ contactForm.addEventListener("submit", function(e) {
   contactForm.reset();
 });
 
-// Hamburger open for 5 seconds only when clicked
+// Hamburger open/close logic
 const menuToggle = document.getElementById("menu-toggle");
 const overlay = document.querySelector(".overlay");
+const closeBtn = document.querySelector(".close-btn");
 
+// Open sidebar
 menuToggle.addEventListener("change", () => {
   if (menuToggle.checked) {
     overlay.style.display = "block";
-
-    setTimeout(() => {
-      menuToggle.checked = false;
-      overlay.style.display = "none";
-    }, 5000);
-
   } else {
     overlay.style.display = "none";
   }
+});
+
+// Close sidebar with X button
+closeBtn.addEventListener("click", () => {
+  menuToggle.checked = false;
+  overlay.style.display = "none";
 });
 
 // Dark mode toggle
