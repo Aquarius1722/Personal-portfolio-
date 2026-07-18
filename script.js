@@ -13,12 +13,26 @@ document.getElementById("viewProjects").addEventListener("click", () => {
   document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
 });
 
-// Contact form submission (Savage Mode)
+// Contact form submission (Savage Mode with random messages)
 const contactForm = document.querySelector("form");
+
 contactForm.addEventListener("submit", function(e) {
   e.preventDefault();
 
-  alert("😹 You think your message went somewhere? It went to heaven 😛🙈");
+  const savageMessages = [
+    "😹 You think your message went somewhere? It went to heaven 😛🙈",
+    "😂😂 Brooo your message just evaporated into thin air 😹",
+    "🤣🤣 Omo you don submit? Na localhost ooo, nothing dey go anywhere 😹",
+    "😛 Your message has been delivered… to absolutely nobody 😹",
+    "🙈 This form is just vibes, nothing dey send 😹",
+    "😹 Your message entered voicemail, nobody will call back 😛",
+    "🤣🤣 Message sent successfully… into the abyss 😹",
+    "😂😂 You really typed all that? For localhost? 😛🙈"
+  ];
+
+  const randomSavage = savageMessages[Math.floor(Math.random() * savageMessages.length)];
+
+  alert(randomSavage);
 
   contactForm.reset();
 });
