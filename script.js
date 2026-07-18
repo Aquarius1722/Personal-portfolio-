@@ -51,3 +51,25 @@ window.addEventListener("load", () => {
     }, 5000);
   }
 });
+
+// Dark mode toggle
+document.getElementById("darkModeToggle").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+// Dark mode styles
+const style = document.createElement("style");
+style.innerHTML = `
+  .dark-mode {
+    background: #121212;
+    color: #f1f1f1;
+  }
+  .dark-mode header, .dark-mode footer {
+    background: #333;
+  }
+  .dark-mode button {
+    background: #444;
+    color: #fff;
+  }
+`;
+document.head.appendChild(style);
