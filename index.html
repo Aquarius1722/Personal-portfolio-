@@ -20,7 +20,6 @@
     <nav>
       <h1 class="logo">MyPortfolio</h1>
 
-      <!-- Desktop Menu -->
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -29,7 +28,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <!-- Hamburger Icon -->
       <label for="menu-toggle" class="hamburger">
         <span></span>
         <span></span>
@@ -40,6 +38,15 @@
 
   <!-- Sidebar -->
   <div class="sidebar">
+
+    <!-- CLOSE BUTTON SVG -->
+    <div class="close-btn">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+        <path d="M17 7L7 17" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M7 7L17 17" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -47,21 +54,21 @@
     <a href="#contact">Contact</a>
   </div>
 
-  <!-- Home Section -->
-  <section id="home" class="fade-in">
+  <!-- Home -->
+  <section id="home">
     <h1>Hello, I'm a Web Developer</h1>
     <p>I build responsive websites using HTML, CSS and JavaScript.</p>
     <button id="viewProjects">View Projects</button>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="fade-in">
+  <!-- About -->
+  <section id="about">
     <h2>About Me</h2>
     <p>I am passionate about web development and enjoy building responsive websites and solving real-world problems through code.</p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="fade-in">
+  <!-- Skills -->
+  <section id="skills">
     <h2>Skills</h2>
     <div class="skill">HTML</div>
     <div class="skill">CSS</div>
@@ -69,43 +76,8 @@
     <div class="skill">React</div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="fade-in">
+  <!-- Projects -->
+  <section id="projects">
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>Weather App</h3>
-      <p>A modern weather application using the OpenWeather API.</p>
-      <a href="https://aquarius1722.github.io/Weather-App/" target="_blank" class="project-btn">
-        View Live Project
-      </a>
-    </div>
-
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A responsive portfolio showcasing my skills and projects.</p>
-      <a href="#" class="project-btn">View Project</a>
-    </div>
-
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 MyPortfolio. All rights reserved.</p>
-    <button id="darkModeToggle">Toggle Dark Mode</button>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
