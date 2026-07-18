@@ -179,13 +179,14 @@ form input, form textarea {
   color: #fff;
 }
 
-/* Footer */
+/* Footer FIX */
 footer {
-  margin-top: 40px;
+  width: 100%;
   padding: 20px;
   text-align: center;
   background: rgba(0,0,0,0.3);
   backdrop-filter: blur(10px);
+  margin-top: 40px;
   position: relative;
   bottom: 0;
 }
@@ -198,4 +199,4 @@ footer {
   .hamburger {
     display: flex;
   }
-  }
+                   }
