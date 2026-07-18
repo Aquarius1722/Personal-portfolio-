@@ -8,10 +8,9 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: #fff;
-  min-height: 100vh;
 }
 
-/* Overlay */
+/* Overlay (JS controls it ONLY) */
 .overlay {
   position: fixed;
   top: 0;
@@ -97,13 +96,9 @@ nav ul.nav-links li a {
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-/* Open drawer */
+/* Sidebar open */
 #menu-toggle:checked ~ .sidebar {
   right: 0;
-}
-
-#menu-toggle:checked ~ .overlay {
-  display: block;
 }
 
 /* Sections */
@@ -112,12 +107,6 @@ section {
   text-align: center;
 }
 
-h1, h2 {
-  margin-bottom: 20px;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-/* FIX: Add spacing before View Projects button */
 #home p {
   margin-bottom: 25px;
 }
@@ -179,7 +168,7 @@ form input, form textarea {
   color: #fff;
 }
 
-/* Footer FIX */
+/* Footer */
 footer {
   width: 100%;
   padding: 20px;
@@ -199,4 +188,4 @@ footer {
   .hamburger {
     display: flex;
   }
-}
+    }
