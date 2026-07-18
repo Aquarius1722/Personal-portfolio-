@@ -37,18 +37,21 @@ contactForm.addEventListener("submit", function(e) {
   contactForm.reset();
 });
 
-// Auto-open hamburger drawer for 5 seconds on mobile
-window.addEventListener("load", () => {
-  if (window.innerWidth <= 768) {
-    const menuToggle = document.getElementById("menu-toggle");
+// Hamburger open for 5 seconds only when clicked
+const menuToggle = document.getElementById("menu-toggle");
+const overlay = document.querySelector(".overlay");
 
-    // Open drawer
-    menuToggle.checked = true;
+menuToggle.addEventListener("change", () => {
+  if (menuToggle.checked) {
+    overlay.style.display = "block";
 
-    // Close after 5 seconds
     setTimeout(() => {
       menuToggle.checked = false;
+      overlay.style.display = "none";
     }, 5000);
+
+  } else {
+    overlay.style.display = "none";
   }
 });
 
