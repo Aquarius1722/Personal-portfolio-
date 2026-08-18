@@ -10,7 +10,6 @@ body {
   color: #fff;
 }
 
-/* Overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -27,7 +26,6 @@ body {
   pointer-events: auto;
 }
 
-/* Navigation */
 header {
   background: rgba(0,0,0,0.3);
   backdrop-filter: blur(10px);
@@ -62,7 +60,6 @@ nav ul.nav-links li a {
   display: none;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -77,7 +74,6 @@ nav ul.nav-links li a {
   border-radius: 5px;
 }
 
-/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -123,7 +119,6 @@ section {
   margin-bottom: 25px;
 }
 
-/* Buttons */
 button {
   padding: 12px 25px;
   background: linear-gradient(135deg, #ff8c00, #ff3d00);
@@ -134,7 +129,6 @@ button {
   font-size: 16px;
 }
 
-/* Skills */
 .skill {
   display: inline-block;
   background: rgba(255,255,255,0.2);
@@ -144,7 +138,6 @@ button {
   font-weight: bold;
 }
 
-/* Projects */
 .project {
   background: rgba(255,255,255,0.15);
   padding: 25px;
@@ -163,7 +156,6 @@ button {
   border-radius: 8px;
 }
 
-/* Contact Form */
 form {
   max-width: 500px;
   margin: auto;
@@ -180,7 +172,7 @@ form input, form textarea {
   color: #fff;
 }
 
-/* Footer */
+
 footer {
   width: 100%;
   padding: 20px;
@@ -192,7 +184,6 @@ footer {
   bottom: 0;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   nav ul.nav-links {
     display: none;
