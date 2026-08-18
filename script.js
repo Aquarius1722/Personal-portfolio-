@@ -1,4 +1,4 @@
-// Smooth scroll
+
 document.querySelectorAll("nav ul li a").forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
@@ -8,12 +8,10 @@ document.querySelectorAll("nav ul li a").forEach(link => {
   });
 });
 
-// View Projects button
 document.getElementById("viewProjects").addEventListener("click", () => {
   document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
 });
 
-// Savage Mode random popup messages
 const contactForm = document.querySelector("form");
 
 contactForm.addEventListener("submit", function(e) {
@@ -37,12 +35,12 @@ contactForm.addEventListener("submit", function(e) {
   contactForm.reset();
 });
 
-// Hamburger open/close logic
+
 const menuToggle = document.getElementById("menu-toggle");
 const overlay = document.querySelector(".overlay");
 const closeBtn = document.querySelector(".close-btn");
 
-// Open sidebar
+
 menuToggle.addEventListener("change", () => {
   if (menuToggle.checked) {
     overlay.style.display = "block";
@@ -51,18 +49,18 @@ menuToggle.addEventListener("change", () => {
   }
 });
 
-// Close sidebar with X button
+
 closeBtn.addEventListener("click", () => {
   menuToggle.checked = false;
   overlay.style.display = "none";
 });
 
-// Dark mode toggle
+
 document.getElementById("darkModeToggle").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
-// Dark mode styles
+
 const style = document.createElement("style");
 style.innerHTML = `
   .dark-mode {
